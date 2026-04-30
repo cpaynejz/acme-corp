@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ACME Corp · TraceConverge fixture (standard single-page)</title>
+
+    <!-- TraceConverge fixture · injected GTM snippet · keep markers below for reset -->
+    <!-- PASTE GTM SNIPPET HERE -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WNT7DJNJ');</script>
+  <!-- run docs/test-fixtures/inject-snippet.sh from the repo root to inject -->
+
+
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; max-width: 720px; margin: 4rem auto; padding: 0 1rem; color: #1f2937; line-height: 1.6; }
+    h1 { color: #2563eb; }
+    .badge { display: inline-block; padding: 0.25rem 0.75rem; background: #dbeafe; color: #1e40af; border-radius: 9999px; font-size: 0.875rem; font-weight: 600; }
+    .marker { background: #fef3c7; padding: 0.75rem 1rem; border-left: 4px solid #f59e0b; font-family: ui-monospace, monospace; font-size: 0.875rem; }
+  </style>
+</head>
+<body>
+    <!-- PASTE GTM NOSCRIPT HERE -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNT7DJNJ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+  <span class="badge">ACME CORP · STANDARD SINGLE-PAGE</span>
+  <h1>ACME Corp</h1>
+  <p>Default persona for the standard single-page fixture. Plain HTML, simple DOM, no client-side routing or lazy loading.</p>
+  <p>Use this fixture for baseline brownfield, greenfield, and verify-only test scenarios. Cross-persona tests (TC-3.5.x) install snippets from other personas here too.</p>
+
+  <h2>Currently configured</h2>
+  <p class="marker">Edit <code>index.html</code> in this repo and paste the GTM snippet (or gtag.js loader) into the marked spots in &lt;head&gt; and &lt;body&gt;. Commit and GitHub Pages rebuilds in ~30s.</p>
+
+  <h2>About this fixture</h2>
+  <p>Page contains: one heading, two paragraphs, a button, and a link — enough DOM for click triggers to bind without complexity getting in the way.</p>
+
+  <p><a href="#test-link">Test link</a> · <button onclick="alert('clicked')">Test button</button></p>
+</body>
+</html>
